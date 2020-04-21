@@ -10,6 +10,14 @@
         <property name="age" value="10"></property>
         <property name="name" value="gezz"></property>
     </bean>
+    <bean id="person2" class="com.worthto.definition.bean.Person">
+        <property name="age" value="11"></property>
+        <property name="name" value="liudan"></property>
+    </bean>
+
+    <bean id="superMan" class="com.worthto.definition.bean.SuperMan" parent="person" primary="true">
+        <property name="address" value="北京"></property>
+    </bean>
 
     <bean id="personFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
         <property name="targetBeanName" value="person"></property>
