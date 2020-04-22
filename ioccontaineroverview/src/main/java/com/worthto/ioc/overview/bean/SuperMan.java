@@ -1,6 +1,6 @@
-package com.worthto.definition.bean;
+package com.worthto.ioc.overview.bean;
 
-import com.worthto.definition.annotation.Super;
+import com.worthto.ioc.overview.annotation.Super;
 
 /**
  * @author gezz

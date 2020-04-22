@@ -1,7 +1,7 @@
 package com.worthto.ioc.overview.dependency.injection;
 
-import com.worthto.definition.bean.Person;
-import com.worthto.definition.dao.PersonDao;
+import com.worthto.ioc.overview.bean.Person;
+import com.worthto.ioc.overview.dao.PersonDao;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

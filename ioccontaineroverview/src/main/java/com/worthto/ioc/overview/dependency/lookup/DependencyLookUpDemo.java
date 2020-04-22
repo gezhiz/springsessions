@@ -1,8 +1,7 @@
 package com.worthto.ioc.overview.dependency.lookup;
 
-import com.worthto.definition.annotation.Super;
-import com.worthto.definition.bean.Person;
-import com.worthto.definition.bean.SuperMan;
+import com.worthto.ioc.overview.annotation.Super;
+import com.worthto.ioc.overview.bean.Person;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectFactory;

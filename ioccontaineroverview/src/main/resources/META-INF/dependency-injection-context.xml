@@ -15,7 +15,7 @@
 
     <import resource="dependency-look-context.xml"></import>
 
-    <bean id="personDao" class="com.worthto.definition.dao.PersonDao" autowire="byType">
+    <bean id="personDao" class="com.worthto.ioc.overview.dao.PersonDao" autowire="byType">
         <!--<util:list>-->
             <!--<ref bean="person"></ref>-->
             <!--<ref bean="person2"></ref>-->
