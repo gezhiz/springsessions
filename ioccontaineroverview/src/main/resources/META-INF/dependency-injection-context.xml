@@ -21,6 +21,10 @@
             <!--<ref bean="person2"></ref>-->
             <!--<ref bean="superMan"></ref>-->
         <!--</util:list>-->
+        <property name="factoryCreatedPerson" ref="factoryCreatedPerson"></property>
 
     </bean>
+
+    <bean id="factoryCreatedPerson" class="com.worthto.ioc.overview.bean.PersonFactoryBean"></bean>
+
 </beans>

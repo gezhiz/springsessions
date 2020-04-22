@@ -19,6 +19,9 @@ public class PersonDao {
 
     private BeanFactory beanFactory;//内建 的非bean对象   内建依赖
 
+    //由工厂创建的类
+    private Person factoryCreatedPerson;
+
     private ObjectFactory<Person> personObjectFactory;
 
     private ObjectFactory<ApplicationContext> applicationContextObjectFactory;
@@ -53,5 +56,13 @@ public class PersonDao {
 
     public void setApplicationContextObjectFactory(ObjectFactory<ApplicationContext> applicationContextObjectFactory) {
         this.applicationContextObjectFactory = applicationContextObjectFactory;
+    }
+
+    public Person getFactoryCreatedPerson() {
+        return factoryCreatedPerson;
+    }
+
+    public void setFactoryCreatedPerson(Person factoryCreatedPerson) {
+        this.factoryCreatedPerson = factoryCreatedPerson;
     }
 }

@@ -23,6 +23,8 @@ public class DependencyLookUpDemo {
         lookUpByCollection(beanFactory);
 //        lookUpByType(beanFactory);
         lookUpByAnnotation(beanFactory);
+
+        System.out.println(getByFactoryBean(beanFactory) == getByFactoryBean(beanFactory));
     }
 
     private static void lookUpByAnnotation(BeanFactory beanFactory) {
@@ -71,4 +73,9 @@ public class DependencyLookUpDemo {
         System.out.println(person.getObject());
     }
 
+    private static Person getByFactoryBean(BeanFactory beanFactory) {
+        Person factoryCreatedPerson = (Person) beanFactory.getBean("factoryCreatedPerson");
+        System.out.println(factoryCreatedPerson);
+        return factoryCreatedPerson;
+    }
 }

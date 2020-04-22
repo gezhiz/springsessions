@@ -50,6 +50,8 @@ public class DependencyInjectionDemo {
         System.out.println("内建bean对象 environment：" + environment);
 
         whoIsIocContainer(personDao, beanFactory);
+
+        System.out.println(personDao.getFactoryCreatedPerson());
     }
 
 
@@ -74,6 +76,5 @@ public class DependencyInjectionDemo {
         //在AbstractRefreshableApplicationContext 的实现中，
         // 使用装饰设计模式，组合了一个BeanFactory对象，这个对象作为真正的ioc容器，为ApplicationContext提供相关的服务
     }
-
 
 }
