@@ -1,4 +1,4 @@
-package com.worthto.ioc.overview;
+package com.worthto.ioc.overview.dependency.lookup;
 
 import com.worthto.definition.annotation.Super;
 import com.worthto.definition.bean.Person;
