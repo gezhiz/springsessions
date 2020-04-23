@@ -6,6 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.AnnotationConfigUtils;
 
 /**
+ * todo 了解spring内建依赖的功能
  * 内建依赖查找
  * @author gezz
  * @description
