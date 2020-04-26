@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd
+              http://www.springframework.org/schema/context
+              http://www.springframework.org/schema/context/spring-context.xsd
+              http://www.springframework.org/schema/tx
+              http://www.springframework.org/schema/tx/spring-tx.xsd
+              http://www.springframework.org/schema/util
+              https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="person" class="com.worthto.bean.Person" autowire="byType">
+        <property name="age" value="11"></property>
+        <property name="name" value="gezz"></property>
+    </bean>
+    <bean id="superMan" class="com.worthto.bean.SuperMan" primary="true">
+        <property name="address" value="北京"></property>
+        <property name="age" value="11"></property>
+        <property name="name" value="gezz"></property>
+    </bean>
+    <bean id="personHolder" class="com.worthto.bean.PersonHolder" autowire="byType"> </bean>
+
+</beans>
