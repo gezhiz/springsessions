@@ -13,14 +13,7 @@
               http://www.springframework.org/schema/util
               https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="person" class="com.worthto.bean.Person" autowire="byType">
-        <property name="age" value="11"></property>
-        <property name="name" value="gezz"></property>
-    </bean>
-    <bean id="superMan" class="com.worthto.bean.SuperMan">
-        <property name="address" value="北京"></property>
-        <property name="age" value="11"></property>
-        <property name="name" value="gezz"></property>
-    </bean>
+    <!--xml 的 autowire 官方不推荐使用，容易造成歧义，而且不支持基本类型的绑定。更推荐使用注解的autowired-->
+    <import resource="autowiring-dependency-lookup-context.xml"></import>
 
 </beans>

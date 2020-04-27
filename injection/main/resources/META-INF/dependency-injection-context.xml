@@ -13,15 +13,8 @@
               http://www.springframework.org/schema/util
               https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="person" class="com.worthto.bean.Person" autowire="byType">
-        <property name="age" value="11"></property>
-        <property name="name" value="gezz"></property>
-    </bean>
-    <bean id="superMan" class="com.worthto.bean.SuperMan">
-        <property name="address" value="北京"></property>
-        <property name="age" value="11"></property>
-        <property name="name" value="gezz"></property>
-    </bean>
+    <import resource="autowiring-dependency-lookup-context.xml"></import>
+
     <bean id="personHolder" class="com.worthto.bean.PersonHolder" autowire="byName">
         <property name="person" ref="person"></property>
     </bean>

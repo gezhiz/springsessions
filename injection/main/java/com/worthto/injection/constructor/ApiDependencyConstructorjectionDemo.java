@@ -1,4 +1,4 @@
-package com.worthto.injection;
+package com.worthto.injection.constructor;
 
 import com.worthto.bean.PersonHolder;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -8,12 +8,13 @@ import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * 通过api的方式，注入依赖
+ * 通过spring 提供的 api的方式，注入依赖，这也是spring-boot实现依赖注入的基本原理
+ * 基于api的注入的方法，是基于spring开发中间件的基础
  * @author gezz
  * @description
  * @date 2020/4/26.
  */
-public class ApiDependencySetterInjectionDemo {
+public class ApiDependencyConstructorjectionDemo {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
@@ -39,7 +40,7 @@ public class ApiDependencySetterInjectionDemo {
      */
     private static BeanDefinition createPersonHolderBeanDefinition() {
         BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition(PersonHolder.class);
-        builder.addPropertyReference("person", "superMan");
+        builder.addConstructorArgReference("superMan");
         return builder.getBeanDefinition();
     }
 //

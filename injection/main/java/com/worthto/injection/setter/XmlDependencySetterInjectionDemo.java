@@ -1,4 +1,4 @@
-package com.worthto.injection;
+package com.worthto.injection.setter;
 
 import com.worthto.bean.PersonHolder;
 import org.springframework.beans.factory.support.BeanDefinitionReader;

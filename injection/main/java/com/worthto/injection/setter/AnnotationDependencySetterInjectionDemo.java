@@ -1,4 +1,4 @@
-package com.worthto.injection;
+package com.worthto.injection.setter;
 
 import com.worthto.bean.Person;
 import com.worthto.bean.PersonHolder;
