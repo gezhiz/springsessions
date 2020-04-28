@@ -22,7 +22,7 @@ public class AnnotationDependencyConstructorInjectionDemo {
 
         BeanDefinitionReader beanReader = new XmlBeanDefinitionReader(annotationConfigApplicationContext);
         //同样可以使用xml作为依赖的来源
-        beanReader.loadBeanDefinitions("classpath:/META-INF/autowiring-dependency-lookup-context.xml");
+        beanReader.loadBeanDefinitions("classpath:/META-INF/dependency-lookup-context.xml");
 
         annotationConfigApplicationContext.refresh();
 

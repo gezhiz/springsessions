@@ -13,7 +13,7 @@
               http://www.springframework.org/schema/util
               https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <import resource="autowiring-dependency-lookup-context.xml"></import>
+    <import resource="dependency-lookup-context.xml"></import>
 
     <bean id="personHolder" class="com.worthto.bean.PersonHolder" autowire="byName">
         <property name="person" ref="person"></property>

@@ -14,6 +14,6 @@
               https://www.springframework.org/schema/util/spring-util.xsd">
 
     <!--xml 的 autowire 官方不推荐使用，容易造成歧义，而且不支持基本类型的绑定。更推荐使用注解的autowired-->
-    <import resource="autowiring-dependency-lookup-context.xml"></import>
+    <import resource="dependency-lookup-context.xml"></import>
 
 </beans>

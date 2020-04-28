@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
          http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="autowiring-dependency-lookup-context.xml"></import>
+    <import resource="dependency-lookup-context.xml"></import>
     <bean id="personHolder" class="com.worthto.bean.PersonHolder">
         <constructor-arg name="person" ref="superMan"></constructor-arg>
     </bean>
