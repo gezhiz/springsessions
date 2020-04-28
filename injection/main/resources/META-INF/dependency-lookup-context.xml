@@ -13,13 +13,17 @@
               http://www.springframework.org/schema/util
               https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="person" class="com.worthto.bean.Person" autowire="byType">
+    <bean id="person" class="com.worthto.bean.Person">
         <property name="age" value="11"></property>
         <property name="name" value="gezz"></property>
+        <property name="city" value="SHANG_HAI"></property>
+        <property name="configFileLocation" value="classpath:/META-INF/mydb.properties"></property>
     </bean>
     <bean id="superMan" class="com.worthto.bean.SuperMan" primary="true">
         <property name="address" value="北京"></property>
         <property name="age" value="11"></property>
-        <property name="name" value="gezz"></property>
+        <property name="name" value="GEZZ"></property>
+        <property name="city" value="BEI_JING"></property>
+        <property name="configFileLocation" value="classpath:/META-INF/mydb.properties"></property>
     </bean>
 </beans>

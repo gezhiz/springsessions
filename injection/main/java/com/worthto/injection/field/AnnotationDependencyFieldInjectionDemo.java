@@ -23,8 +23,8 @@ public class AnnotationDependencyFieldInjectionDemo {
     private PersonHolder personHolder;
 
     //Autowired会忽略static字段,person字段为nul
-    @Autowired
-    private static Person person;
+    @Resource(name = "person")
+    private Person person;
 
     @Resource
     private PersonHolder personHolder2;

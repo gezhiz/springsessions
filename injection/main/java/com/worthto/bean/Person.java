@@ -1,5 +1,8 @@
 package com.worthto.bean;
 
+import com.worthto.enums.City;
+import org.springframework.core.io.Resource;
+
 /**
  * @author gezz
  * @description
@@ -8,6 +11,15 @@ package com.worthto.bean;
 public class Person {
     private String name;
     private Integer age;
+    /**
+     * 枚举类型，会自动转换
+     */
+    private City city;
+
+    /**
+     * Resource 也会被转换
+     */
+    private Resource configFileLocation;
 
     public String getName() {
         return name;
@@ -25,11 +37,29 @@ public class Person {
         this.age = age;
     }
 
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+
+    public Resource getConfigFileLocation() {
+        return configFileLocation;
+    }
+
+    public void setConfigFileLocation(Resource configFileLocation) {
+        this.configFileLocation = configFileLocation;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", city=" + city +
+                ", configFileLocation=" + configFileLocation +
                 '}';
     }
 
