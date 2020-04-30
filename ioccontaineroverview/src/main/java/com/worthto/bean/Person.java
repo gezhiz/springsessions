@@ -1,8 +1,11 @@
 package com.worthto.bean;
 
 import com.worthto.enums.City;
+import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.core.io.Resource;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +14,7 @@ import java.util.List;
  * @description
  * @date 2020/4/21.
  */
-public class Person {
+public class Person implements BeanNameAware {
     private String name;
     private Integer age;
     /**
@@ -30,6 +33,7 @@ public class Person {
      * Resource 也会被转换
      */
     private Resource configFileLocation;
+    private String beanname;
 
     public String getName() {
         return name;
@@ -96,5 +100,21 @@ public class Person {
         person.setName("默认person");
         person.setAge(11);
         return person;
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.println(beanname + "对象初始化");
+    }
+
+    //单例对象才会执行销毁方法
+    @PreDestroy
+    public void destory() {
+        System.out.println(beanname + "person 销毁");
+    }
+
+    @Override
+    public void setBeanName(String name) {
+        this.beanname = name;
     }
 }
