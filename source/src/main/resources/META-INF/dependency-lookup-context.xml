@@ -22,7 +22,7 @@
         <property name="age" value="11"></property>
         <property name="name" value="gezz"></property>
         <property name="city" value="SHANG_HAI"></property>
-        <property name="configFileLocation" value="classpath:/META-INF/mydb.properties"></property>
+        <property name="configFileLocation" value="classpath:/META-INF/default.properties"></property>
         <property name="workCities" value="BEI_JING,HAGN_ZHOU"></property>
         <property name="liveCities" value="BEI_JING,SHANG_HAI"></property>
     </bean>
