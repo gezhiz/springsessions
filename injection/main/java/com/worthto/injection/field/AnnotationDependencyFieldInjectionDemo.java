@@ -47,8 +47,6 @@ public class AnnotationDependencyFieldInjectionDemo {
         System.out.println(fieldInjectionDemo.personHolder2);
 
         System.out.println(fieldInjectionDemo.person);
-
-
     }
 
     @Bean
