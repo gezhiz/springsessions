@@ -1,13 +1,11 @@
-package com.worthto.ioc.overview.bean;
+package com.worthto.bean;
 
-import com.worthto.ioc.overview.annotation.Super;
 
 /**
  * @author gezz
  * @description
  * @date 2020/4/21.
  */
-@Super
 public class SuperMan extends Person {
     private String address;
 

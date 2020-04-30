@@ -1,6 +1,6 @@
-package com.worthto.ioc.overview.definition;
+package com.worthto.definition;
 
-import com.worthto.ioc.overview.bean.PersonFactory;
+import com.worthto.bean.PersonFactory;
 import org.springframework.beans.factory.config.SingletonBeanRegistry;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.worthto.ioc.overview.annotation;
+package com.worthto.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

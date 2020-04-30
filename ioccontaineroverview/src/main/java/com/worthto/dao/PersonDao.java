@@ -1,6 +1,6 @@
-package com.worthto.ioc.overview.dao;
+package com.worthto.dao;
 
-import com.worthto.ioc.overview.bean.Person;
+import com.worthto.bean.Person;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.ApplicationContext;

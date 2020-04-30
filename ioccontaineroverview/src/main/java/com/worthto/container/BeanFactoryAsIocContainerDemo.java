@@ -1,6 +1,6 @@
-package com.worthto.ioc.overview.container;
+package com.worthto.container;
 
-import com.worthto.ioc.overview.bean.Person;
+import com.worthto.bean.Person;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;

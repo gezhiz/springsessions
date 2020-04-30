@@ -1,6 +1,6 @@
-package com.worthto.ioc.overview.definition;
+package com.worthto.definition;
 
-import com.worthto.ioc.overview.bean.Person;
+import com.worthto.bean.Person;
 import org.junit.Test;
 
 import java.beans.*;

@@ -1,4 +1,4 @@
-package com.worthto.ioc.overview.bean;
+package com.worthto.bean;
 
 /**
  * @author gezz
