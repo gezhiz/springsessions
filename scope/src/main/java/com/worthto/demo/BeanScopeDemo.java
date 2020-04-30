@@ -1,4 +1,4 @@
-package com.worthto.scope;
+package com.worthto.demo;
 
 import com.worthto.bean.Person;
 import org.springframework.beans.factory.DisposableBean;
@@ -9,12 +9,10 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * prototype 类型的对象，spring不会管理完整的bean的生命周期，一旦生成了对象，该scope bean对象就与spring容器脱离。

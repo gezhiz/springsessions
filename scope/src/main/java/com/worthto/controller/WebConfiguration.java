@@ -1,4 +1,4 @@
-package com.worthto.scope.controller;
+package com.worthto.controller;
 
 import com.worthto.bean.Person;
 import org.springframework.context.annotation.Bean;
